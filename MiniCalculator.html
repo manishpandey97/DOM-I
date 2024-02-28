@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+    <style>
+        #container{
+            margin: auto;
+            margin-top: 20vh;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border: 1px solid lightgoldenrodyellow;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.659);
+            box-shadow: 2px 2px 5px rgba(211, 211, 211, 0.599);
+        }
+        #container>input {
+            border: none;
+            outline: rgb(170, 105, 8);
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+            font-size: large;
+        }
+        #container>div {
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #container>div>button {
+            border: wheat;
+            outline: lightcyan;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: large;
+            background-color: rgba(40, 126, 40, 0.791);
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <input id="firstnum" type="text" value="" placeholder="Enter first number" >
+         <input id="secondnum" type="text" value="" placeholder="Enter second number" >
+         <hr style=" width: 95%;">
+         <div>
+            <button onclick="add()">Add</button>
+         <button onclick="subtract()">Subtract</button>
+         <button onclick="multiply()">Multiply</button>
+         <button onclick="divide()">Divide</button>
+         </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function add(){
+    alert(parseInt(document.getElementById("firstnum").value)+
+    parseInt(document.getElementById("secondnum").value));
+    }
+
+    function subtract(){
+     alert(parseInt(document.getElementById("firstnum").value)-
+    parseInt(document.getElementById("secondnum").value));
+    }
+    function multiply(){
+        alert(parseInt(document.getElementById("firstnum").value)*
+    parseInt(document.getElementById("secondnum").value));
+    }
+    function divide(){
+        alert(parseInt(document.getElementById("firstnum").value)/
+    parseInt(document.getElementById("secondnum").value));
+    }
+</script>
