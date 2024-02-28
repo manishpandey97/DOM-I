@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Showing Alerts</title>
+        <style>
+            #container{
+                margin: auto;
+                width:10% ;
+                background-color: aqua;
+                text-align: center;
+               padding: 10px;
+               border-radius: 10px;
+               box-shadow: 5px 5px 3px lightgray inset;
+            }
+            #container button{
+                padding: 10px;
+                margin: 10px;
+                width: 90%;
+                border-radius: 10px;
+                border: 1px solid rgb(77, 14, 14);
+                cursor: pointer;
+            }
+        </style>
+	</head>
+	<body>
+        <div id="container">
+            <button onclick="showFirstName()">FIRST NAME</button>
+		<button onclick="showLastName()">LAST NAME</button>
+		<button onclick="showFullName()">FULL NAME</button>
+        </div>
+		
+		<script type="text/javascript">
+            function showFirstName() {
+			    // Complete to show an alert with your first name 
+                alert('Manish');
+			}
+
+            function showLastName() {
+                // Complete to show an alert with your last name 
+                alert('Pandey');            
+            }
+
+            function showFullName() {
+                // Complete to show an alert with your full name (firstname lastname)
+                alert('Manish Pandey');               
+            }
+        </script>
+	</body>
+</html>
